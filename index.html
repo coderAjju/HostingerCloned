@@ -1,0 +1,1119 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <header class="sticky top-0 z-20">
+    <nav id="laptop_view"
+      class="bg-white shadow-lg shadow-gray-200 h-20 items-center w-full px-6 mx-auto flex justify-between">
+      <div class="flex items-center space-x-7">
+        <a href="#"><img src="./assets/hostinger-logo.svg" alt=""></a>
+        <a id="indian_flag" class=" hidden sm:flex items-center space-x-2" href="#"><img class="w-8"
+            src="./assets/in-2x.png" alt="indian-flag">
+          <h2 class="font-bold hover:text-gray-500">English</h2>
+        </a>
+      </div>
+      <div id="menu_list" class="">
+        <ul class="xl:flex space-x-2 items-center hidden">
+          <a class="p-2 " href="#">
+            <li class="hover:text-gray-500">WordPress</li>
+          </a>
+          <a class="p-2" href="#">
+            <li class="hover:text-gray-500">Website Builder</li>
+          </a>
+          <a class="p-2" href="#" class="relative w-full">
+            <li id="hostig_btn" class="flex items-center hover:text-gray-500"><span class="">Hosting</span> <span
+                id="rotate_icon" class="material-symbols-outlined">
+                expand_more
+              </span>
+            </li>
+          </a>
+          <a class="p-2" href="#">
+            <li class="hover:text-gray-500">Pro</li>
+          </a>
+          <a class="p-2" href="#">
+            <li class="hover:text-gray-500">Domain</li>
+          </a>
+          <a class="p-2" href="#">
+            <li class="hover:text-gray-500"><button class="border-2  border-black p-3 px-4 rounded-xl font-bold">Log
+                in</button></li>
+          </a>
+        </ul>
+        <div id="menu_btn" class=" xl:hidden"><span class="p-2 material-symbols-outlined">
+            menu
+          </span>
+        </div>
+      </div>
+      <div id="hosting_list" class="hidden absolute transition-all right-28 top-16 bg-white ">
+        <div class="max-w-[400px] shadow-div p-4 relative">
+          <div class=" absolute w-3 h-3 top-[-5px] rotate-45 left-[47%] bg-white"></div>
+          <div class=" flex space-y-3 justify-start items-start flex-col">
+            <div class="flex justify-center items-center space-x-3 hover:scale-105 transition-all">
+              <span class="text-[#673de6] material-symbols-outlined">view_list</span>
+              <div class="leading-5">
+                <h1 class="font-bold text-[#2f1c6a]">Web Hosting</h1>
+                <p class="text-[#2f1c6a]">For small to medium websites.</p>
+              </div>
+            </div>
+            <div class="flex justify-center items-center space-x-3 hover:scale-105 transition-all">
+              <span class="text-[#673de6] material-symbols-outlined">cloud</span>
+              <div class="leading-5">
+                <h1 class="font-bold text-[#2f1c6a]">Cloud Hosting</h1>
+                <p class="text-[#2f1c6a]">For large scale projects.</p>
+              </div>
+            </div>
+            <div class="flex justify-center items-center space-x-3 hover:scale-105 transition-all">
+              <span class="text-[#673de6] material-symbols-outlined">phone_iphone</span>
+              <div class="leading-5">
+                <h1 class="font-bold text-[#2f1c6a]">VPS Hosting</h1>
+                <p class="text-[#2f1c6a]">Dedicated resources to scale.</p>
+              </div>
+            </div>
+            <div class="flex justify-center items-center space-x-3 hover:scale-105 transition-all">
+              <span class="text-[#673de6] material-symbols-outlined">alternate_email</span>
+              <div class="leading-5">
+                <h1 class="font-bold text-[#2f1c6a]">Business Email</h1>
+                <p class="text-[#2f1c6a]">Promote your business with every outreach.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav id="Mobile_view" class="hidden sm:hidden">
+      <div class="w-screen h-screen relative pt-5 bg-white">
+        <div class="flex justify-between p-2">
+          <a href="#"><img class="blur-[0.8px]" src="./assets/hostinger-logo.svg" alt=""></a>
+          <span id="close_menu" class="mr-6 material-symbols-outlined">
+            close
+          </span>
+        </div>
+        <div class="mt-5">
+          <ul class="flex flex-col space-y-1">
+            <a class="p-2 " href="#">
+              <li class="font-bold text-blue-950 text-lg">WordPress</li>
+            </a>
+            <a class="p-2" href="#">
+              <li class="font-bold text-blue-950 text-lg">Website Builder</li>
+            </a>
+            <a class="p-2" href="#">
+              <li class="font-bold text-blue-950 flex justify-between"><span class="text-lg">Hosting</span><span
+                  class="material-symbols-outlined">
+                  chevron_right
+                </span></li>
+            </a>
+            <a class="p-2" href="#">
+              <li class="font-bold text-blue-950 text-lg">Pro</li>
+            </a>
+            <a class="p-2" href="#">
+              <li class="font-bold text-blue-950 text-lg">Domain</li>
+            </a>
+
+          </ul>
+          <div class="flex justify-between p-2 mt-4">
+            <a id="indian_flag" class="flex items-center space-x-2" href="#"><img class="w-8" src="./assets/in-2x.png"
+                alt="indian-flag">
+              <h2 class="font-bold">English</h2>
+            </a>
+            <span class="material-symbols-outlined">
+              chevron_right
+            </span>
+          </div>
+          <div class="absolute bottom-7 w-screen flex justify-center items-center">
+            <button class="w-[94%] border-2 border-blue-950 py-3 rounded">Log in</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="homePage" class="bg-[#f5f4ff]">
+    <section
+      class=" px-5 sm:px-10 pt-5 container mx-auto flex flex-col xl:flex-row justify-center sm:justify-between items-center sm:h-screen ">
+      <div class="flex flex-col space-y-4">
+        <h1 class="flex sm:flex-row flex-col sm:w-[450px] ">
+          <span class="sm:text-[43px] leading-[46px] text-[25px] text-center sm:text-left  font-bold">
+            <span class="text-[#2f1c6a]">Bring Your Idea Online</span>
+            <span class="text-[#673de6]">With a Website</span>
+          </span>
+        </h1>
+        <h4 class="sm:text-[20px] font-bold text-[#2f1c6a] text-center">Up to <span class="text-[#673de6]">77%</span>
+          off Hosting +
+          Website Builder</h4>
+        <ul class="flex justify-center flex-col sm:items-start items-center">
+          <li class="flex items-center space-x-2"><span
+              class="text-green-500 material-symbols-outlined">check_small</span><span class="text-[#2f1c6a]">Free
+              Domain</span><span class="material-symbols-outlined text-[#2f1c6a]">help</span></li>
+          <li class="flex items-center space-x-2"><span
+              class="text-green-500 material-symbols-outlined">check_small</span><span class="text-[#2f1c6a]">Free
+              Website Migration</span><span class="material-symbols-outlined text-[#2f1c6a]">help</span></li>
+          <li class="flex items-center space-x-2"><span
+              class="text-green-500 material-symbols-outlined">check_small</span><span class="text-[#2f1c6a]">24/7
+              Customer Support</span></li>
+        </ul>
+        <div class="flex items-end sm:justify-start justify-center text-[#2f1c6a]">
+          <span class="text-xl">&#8377;</span>
+          <h1 class="font-bold text-5xl">139.00</h1>
+          <span class="text-xl">/mo</span>
+        </div>
+        <h3 class="font-bold text-xl text-[#2f1c6a] text-center sm:text-left ">+ 2 Months Free</h3>
+        <div class="flex items-center sm:justify-start justify-center space-x-1">
+          <div id="day" class="p-4 border-[1px] rounded-md border-[#2f1c6a] font-bold text-xl text-[#2c1f51]">00</div>
+          <span class="text-[#2f1c6a]">:</span>
+          <div id="hour" class="p-4 border-[1px] rounded-md border-[#2f1c6a] font-bold text-xl text-[#2c1f51]">00</div>
+          <span class="text-[#2f1c6a]">:</span>
+          <div id="minute" class="p-4 border-[1px] rounded-md border-[#2f1c6a] font-bold text-xl text-[#2c1f51]">00
+          </div>
+          <span class="text-[#2f1c6a]">:</span>
+          <div id="second" class="p-4 border-[1px] rounded-md border-[#2f1c6a] font-bold text-xl text-[#2c1f51]">00
+          </div>
+        </div>
+        <button class=" sm:mx-0 mx-auto w-[283px] rounded-sm bg-[#fc5185] py-3 font-bold text-white">Claim Deal</button>
+        <div class="flex text-[#4c368e] sm:justify-start justify-center">
+          <span class="material-symbols-outlined">verified_user</span>
+          <span>30-Day Money-Back Guarantee</span>
+        </div>
+      </div>
+      <div class="mt-12">
+        <img src="./assets/download.png" alt="">
+      </div>
+    </section>
+  </main>
+  <section id="ratings"
+    class="container mx-auto px-11 my-12 flex flex-col sm:flex-wrap md:flex-row sm:justify-between items-center  justify-center ">
+    <div class="flex flex-col space-y-1">
+      <div class="flex font-bold text-xl"><i class="text-2xl fa-solid fa-star text-[#00b090]"></i>Trustpilot</div>
+      <div>
+        <i class="bg-[#00b090] text-white p-2 text-2xl fa-solid fa-star"></i>
+        <i class="bg-[#00b090] text-white p-2 text-2xl fa-solid fa-star"></i>
+        <i class="bg-[#00b090] text-white p-2 text-2xl fa-solid fa-star"></i>
+        <i class="bg-[#00b090] text-white p-2 text-2xl fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke bg-[#00b090] text-white p-2 text-2xl"></i>
+      </div>
+      <span class="flex space-x-1 items-center">TrustScore <h1 class="pl-1 font-bold">4.6</h1>
+        <div class="h-4 w-[2px] bg-slate-500"></div>
+        <h1 class="font-bold pr-1">23,395</h1>reviews
+      </span>
+    </div>
+    <div class="flex flex-col space-y-2 justify-start mt-5">
+      <div class="flex font-bold text-xl">Google</div>
+      <div class="space-x-1">
+        <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+        <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+        <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+        <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+        <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+      </div><span class="flex space-x-1 items-center">Rating <h1 class="pl-1 font-bold">4.8/5</h1>
+        <div class="h-4 w-[2px] bg-slate-500"></div>
+        <h1 class="font-bold pr-1">1,237</h1>reviews
+      </span>
+    </div>
+    <div class="flex flex-col space-y-2 justify-start mt-5">
+      <div class="flex text-xl"><img src="./assets/hostadvice-dark.svg" alt=""></div>
+      <div class="space-x-1">
+        <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+        <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+        <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+        <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+        <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+      </div>
+      <span class="flex space-x-1 items-center">Rating <h1 class="pl-1 font-bold">4.6/5</h1>
+        <div class="h-4 w-[2px] bg-slate-500"></div>
+        <h1 class="font-bold pr-1">2,432</h1>reviews
+      </span>
+    </div>
+    <div class="flex flex-col space-y-2 justify-start items-start mt-5">
+      <div class="flex text-xl"><img src="./assets/wpbeginner-dark.svg" alt=""> </div>
+      <div class="space-x-1">
+        <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+        <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+        <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+        <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+        <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+      </div>
+      <span class="flex space-x-1 items-center">Rating <h1 class="pl-1 font-bold">4.7/5</h1>
+        <div class="h-4 w-[2px] bg-slate-500"></div>
+        <h1 class="font-bold pr-1">1,874 </h1>reviews
+      </span>
+    </div>
+  </section>
+  <section id="plans" class="relative container mx-auto flex  px-3 flex-col">
+    <div>
+      <h1 class="font-bold text-5xl text-center my-12  text-[#2f1c6a]">Select Your Plan</h1>
+    </div>
+    <div
+      class="flex sm:justify-around justify-center items-center space-y-6 sm:space-y-0 sm:flex-row flex-col relative mt-6">
+      <div id="plan1" class=" sm:block">
+        <div class="plan-shadow-div w-[96vw] sm:w-[27.5vw] border-2 rounded-md ">
+          <div class="flex flex-col space-y-4 pb-5 border-b-2 mx-7 ">
+            <div class="py-5">
+              <h1 class="text-2xl font-bold text-center text-[#2f1c6a]">Premium</h1>
+              <p class="text-center text-sm p-0 text-[#2f1c6a]">Everything you need to create your website</p>
+            </div>
+            <div class="justify-center flex space-x-1 items-center  ">
+              <strike class="text-slate-400">&#8377;599.00 </strike>
+              <span class="text-[#2f1c6a] font-bold p-2 rounded-full bg-purple-200">save 77%</span>
+            </div>
+            <div class="flex items-end justify-center text-[#2f1c6a]">
+              <span class="text-xl">&#8377;</span>
+              <h1 class="font-bold text-5xl">139.00</h1>
+              <span class="text-xl">/mo</span>
+            </div>
+            <h3 class="font-bold text-xl text-[#673de6] text-center  ">+ 2 Months Free</h3>
+            <button class=" mx-auto w-[283px] rounded-sm bg-[#673de6] py-3 font-bold text-white">Add to Cart</button>
+            <div class="flex text-[#4c368e] justify-center">
+              <span>₹249.00/mo when you renew</span>
+            </div>
+          </div>
+          <div class="mx-7 mt-5">
+            <h1 class="font-bold my-2 text-[#2f1c6a] text-xl">Top Features</h1>
+            <ul class="flex flex-col space-y-3">
+              <li class="flex space-x-1 items-center"><span
+                  class="text-yellow-500 material-symbols-outlined">check_small</span><span
+                  class="text-[#2f1c6a] font-bold">Standard</span> <span class="text-[#2f1c6a]">Performance</span></li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-yellow-500 material-symbols-outlined">check_small</span><span
+                    class="text-[#2f1c6a] font-bold">100</span> <span>Websites</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex space-x-1 items-center"><span
+                  class="text-yellow-500 material-symbols-outlined">check_small</span><span
+                  class="text-[#2f1c6a] font-bold">100</span><span>GB SSD Storage</span></li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-yellow-500 material-symbols-outlined">check_small</span><span
+                    class="text-[#2f1c6a] font-bold">Weekly</span> <span>Backups</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                    class="text-[#2f1c6a] font-bold">Unlimited</span> <span> Free SSL</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                    class="text-[#2f1c6a] font-bold">Unlimited</span> <span> Bandwidth</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                    class="text-[#2f1c6a] font-bold">Free</span> <span> Email</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                    class="text-[#2f1c6a] font-bold">Free</span> <span>Domain (₹799.00 value)</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-red-500 material-symbols-outlined">close_small</span><span
+                    class="text-slate-500 font-bold">Free</span> <span class="text-slate-500">CDN</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-red-500 material-symbols-outlined">close_small</span><span
+                    class="text-slate-400 font-bold">Dedicated</span> <span class="text-slate-400">IP Address</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="mostPopular_Plan">
+        <div
+          class="plan-shadow-div w-[96vw] sm:w-[27.5vw] relative z-10 bg-purple-50 border-2 border-purple-500 rounded-md ">
+          <div class="flex justify-center w-full absolute top-[-20px]">
+            <h1 class="text-[#fc5185] py-[5px] px-20 rounded-full font-bold text-xl bg-red-200 w-fit">Most Popular</h1>
+          </div>
+          <div class="flex flex-col space-y-4 pb-5 border-b-2 mx-7 ">
+            <div class="py-5">
+              <h1 class="text-2xl font-bold text-center text-[#2f1c6a]">Business</h1>
+              <p class="text-center p-0 text-sm text-[#2f1c6a]">Level-up with more power and enhanced features</p>
+            </div>
+            <div class="justify-center flex space-x-1 items-center  ">
+              <strike class="text-slate-400">&#8377;699.00 </strike>
+              <span class="text-[#fc5185] font-bold p-2 rounded-full bg-red-200">save 64%</span>
+            </div>
+            <div class="flex items-end justify-center text-[#2f1c6a]">
+              <span class="text-xl">&#8377;</span>
+              <h1 class="font-bold text-5xl">249.00</h1>
+              <span class="text-xl">/mo</span>
+            </div>
+            <h3 class="font-bold text-xl text-[#fc5185] text-center  ">+ 2 Months Free</h3>
+            <button class=" mx-auto w-[283px] rounded-sm bg-[#fc5185] py-3 font-bold text-white">Add to Cart</button>
+            <div class="flex text-[#4c368e] justify-center">
+              <span>₹499.00/mo when you renew</span>
+            </div>
+          </div>
+          <div class="mx-7 mt-5">
+            <h1 class="font-bold my-2 text-[#2f1c6a] text-xl">Top Features</h1>
+            <ul class="flex flex-col space-y-3">
+              <li class="flex space-x-1 items-center"><span
+                  class="text-green-500 material-symbols-outlined">check_small</span><span
+                  class="text-[#2f1c6a] font-bold">Increase</span> <span class="text-[#2f1c6a]">Performance(Up to
+                  5x)</span></li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                    class="text-[#2f1c6a] font-bold">100</span> <span>Websites</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex space-x-1 items-center"><span
+                  class="text-green-500 material-symbols-outlined">check_small</span><span
+                  class="text-[#2f1c6a] font-bold">200 GB</span><span> NVMe Storage</span></li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-yellow-500 material-symbols-outlined">check_small</span><span
+                    class="text-[#2f1c6a] font-bold">Daily</span> <span>Backups(₹1,380.00 value)</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                    class="text-[#2f1c6a] font-bold">Unlimited</span> <span> Free SSL</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                    class="text-[#2f1c6a] font-bold">Unlimited</span> <span> Bandwidth</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                    class="text-[#2f1c6a] font-bold">Free</span> <span> Email</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                    class="text-[#2f1c6a] font-bold">Free</span> <span>Domain (₹799.00 value)</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-green-500 material-symbols-outlined">close_small</span><span
+                    class="text-slate-500 font-bold">Free</span> <span class="text-slate-500">CDN</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-red-500 material-symbols-outlined">close_small</span><span
+                    class="text-slate-400 font-bold">Dedicated</span> <span class="text-slate-400">IP Address</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="plan2" class="sm:block">
+        <div class="plan-shadow-div w-[96vw] sm:w-[27.5vw] border-2 rounded-md ">
+          <div class="flex flex-col space-y-4 pb-5 border-b-2 mx-7 ">
+            <div class="py-5">
+              <h1 class="text-2xl font-bold text-center text-[#2f1c6a]">Premium</h1>
+              <p class="text-center p-0 text-sm text-[#2f1c6a]">Enjoy optimised performance & guaranteed resources</p>
+            </div>
+            <div class="justify-center flex space-x-1 items-center  ">
+              <strike class="text-slate-400">&#8377;1699.00 </strike>
+              <span class="text-[#2f1c6a] font-bold p-2 rounded-full bg-purple-200">save 59%</span>
+            </div>
+            <div class="flex items-end justify-center text-[#2f1c6a]">
+              <span class="text-xl">&#8377;</span>
+              <h1 class="font-bold text-5xl">699.00</h1>
+              <span class="text-xl">/mo</span>
+            </div>
+            <h3 class="font-bold text-xl text-[#673de6] text-center  ">+ 2 Months Free</h3>
+            <button class=" mx-auto w-[283px] rounded-sm bg-[#673de6] py-3 font-bold text-white">Claim Deal</button>
+            <div class="flex text-[#4c368e] justify-center">
+              <span>₹1279.00/mo when you renew</span>
+            </div>
+          </div>
+          <div class="mx-7 mt-5">
+            <h1 class="font-bold my-2 text-[#2f1c6a] text-xl">Top Features</h1>
+            <ul class="flex flex-col space-y-3">
+              <li class="flex space-x-1 items-center"><span
+                  class="text-yellow-500 material-symbols-outlined">check_small</span><span
+                  class="text-[#2f1c6a] font-bold">Standard</span> <span class="text-[#2f1c6a]">Performance</span></li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-yellow-500 material-symbols-outlined">check_small</span><span
+                    class="text-[#2f1c6a] font-bold">100</span> <span>Websites</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex space-x-1 items-center"><span
+                  class="text-yellow-500 material-symbols-outlined">check_small</span><span
+                  class="text-[#2f1c6a] font-bold">100</span><span>GB SSD Storage</span></li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-yellow-500 material-symbols-outlined">check_small</span><span
+                    class="text-[#2f1c6a] font-bold">Weekly</span> <span>Backups</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                    class="text-[#2f1c6a] font-bold">Unlimited</span> <span> Free SSL</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                    class="text-[#2f1c6a] font-bold">Unlimited</span> <span> Bandwidth</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                    class="text-[#2f1c6a] font-bold">Free</span> <span> Email</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                    class="text-[#2f1c6a] font-bold">Free</span> <span>Domain (₹799.00 value)</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-red-500 material-symbols-outlined">close_small</span><span
+                    class="text-slate-500 font-bold">Free</span> <span class="text-slate-500">CDN</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+              <li class="flex items-center justify-between">
+                <span class="flex items-center space-x-1">
+                  <span class="text-red-500 material-symbols-outlined">close_small</span><span
+                    class="text-slate-400 font-bold">Dedicated</span> <span class="text-slate-400">IP Address</span>
+                </span>
+                <span class="text-[#2f1c6a] material-symbols-outlined">help</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="absolute w-full h-full px-4 z-20 text-xl text-purple-500 flex justify-between items-center">
+        <i class="fa-solid py-2 px-3 fa-chevron-left"></i>
+        <i class="fa-solid py-2 px-3 fa-chevron-right"></i>
+      </div>
+    </div>
+    <div class="w-full text-center my-14">
+      <h1 class="font-bold text-xl text-[#2f1c6a]">Payment terms</h1>
+    </div>
+  </section>
+  <section class="container sm:mx-auto py-7 sm:p-20 bg-[#fafbff] ">
+    <div class="w-full text-center mt-14 sm:mb-6">
+      <h1 class="font-bold text-2xl sm:text-4xl text-[#2f1c6a]">Data Centres All Around the World</h1>
+    </div>
+    <p class=" text-[#2f1c6a] sm:p-0 p-3 text-center">Our web hosting, WordPress hosting, and cloud hosting plans offer
+      server locations in: USA, United Kingdom, France, India, Singapore, Brazil, Lithuania, and the Netherlands.</p>
+    <img src="./assets/image-2x.png" alt="">
+  </section>
+  <section class="container mx-auto w-full px-3 sm:px-8 mt-20 flex sm:flex-row flex-col justify-between items-center ">
+    <div class="">
+      <h1 class="text-xl w-full sm:text-4xl font-bold sm:w-[350px] py-4 text-[#2f1c6a]">All-In-One Website Solution</h1>
+      <ul class="flex flex-col space-y-5 my-4">
+        <li class="flex items-center justify-between">
+          <span class="flex items-center space-x-1">
+            <span class="text-green-500 material-symbols-outlined">check_small</span><span class="text-slate-500">Manage
+              up to 100 websites.</span>
+          </span>
+        </li>
+        <li class="flex items-center justify-between">
+          <span class="flex items-center space-x-1">
+            <span class="text-green-500 material-symbols-outlined">check_small</span><span
+              class="text-slate-500">Register a domain name for free.
+            </span><span class="text-slate-500 material-symbols-outlined">help</span>
+          </span>
+        </li>
+        <li class="flex items-center justify-between">
+          <span class="flex items-center space-x-1">
+            <span class="text-green-5 text-green-500 material-symbols-outlined">check_small</span><span
+              class="text-slate-500">Set up a professional business email address.
+            </span><span class="text-slate-500 material-symbols-outlined">help</span>
+          </span>
+        </li>
+        <li class="flex items-center justify-between">
+          <span class="flex items-center space-x-1">
+            <span class="text-green-500 material-symbols-outlined">check_small</span><span class="text-slate-500">
+              Optimize your workflow with managed WordPress hosting.</span>
+          </span>
+        </li>
+        <li class="flex items-center justify-between">
+          <span class="flex items-center space-x-1">
+            <span class="text-green-500 material-symbols-outlined">check_small</span><span class="text-slate-500">
+              Launch websites quickly with our Website Builder.</span>
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div class=" sm:w-1/2">
+      <img class="" src="./assets/all-in-one-website-2x.png" alt="">
+    </div>
+  </section>
+  <section class="container mx-auto my-20  flex space-y-8 sm:space-y-0 space-x-2 justify-between items-center sm:flex-row flex-col">
+    <div class=" w-[90vw] h-[206px] sm:w-[30vw] bg-[#eff2fe] p-7 space-y-2 flex justify-between flex-col">
+      <img class="w-64" src="./assets/trustpilot-dark-2x.png" alt="">
+      <p>Easy to use, intuitive and fluid interface, support always willing to assist in problems that may appear.</p>
+      <div class="flex justify-between">
+        <div>
+          <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+          <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+          <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+          <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+          <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+        </div>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+    </div>
+    <div class="w-[90vw] h-[206px] sm:w-[30vw] bg-[#eff2fe] p-7 space-y-2 flex justify-between flex-col">
+      <img class="w-64" src="./assets/trustpilot-dark-2x.png" alt="">
+      <p>Easy to use platform. Very good and fast support. Highly recommended.</p>
+      <div class="flex justify-between">
+        <div>
+          <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+          <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+          <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+          <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+          <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+        </div>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+    </div>
+    <div class="w-[90vw] h-[206px] sm:w-[30vw] bg-[#eff2fe] p-7 space-y-2 flex justify-between flex-col">
+      <img class="w-64" src="./assets/trustpilot-dark-2x.png" alt="">
+      <p>Even though I am a newbie in this world it has been very easy for me to understand and manage my site.</p>
+      <div class="flex justify-between">
+        <div>
+          <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+          <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+          <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+          <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+          <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+        </div>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+    </div>
+  </section>
+  <section class=" container mx-auto mt-20 flex justify-between flex-col items-center">
+    <div class="flex justify-between sm:flex-row flex-col-reverse my-6 items-center">
+      <img class=" w-[90vw] sm:w-1/2" src="./assets/maximize-website-speed-2x.png" alt="">
+      <div class=" w-[90vw] sm:w-1/2 flex justify-center items-center flex-col ml-0 sm:ml-20">
+        <div>
+          <h1 class="text-xl w-full sm:text-4xl font-bold py-4 text-[#2f1c6a]">Maximize Website Speed</h1>
+          <ul class="flex flex-col space-y-5 my-4">
+            <li class="flex items-center justify-between">
+              <span class="flex items-center space-x-1">
+                <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                  class="text-slate-500">Manage up to 100 websites.</span>
+              </span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span class="flex items-center space-x-1">
+                <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                  class="text-slate-500">Register a domain name for free.
+                </span><span class="text-slate-500 material-symbols-outlined">help</span>
+              </span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span class="flex items-center space-x-1">
+                <span class="text-green-5 text-green-500 material-symbols-outlined">check_small</span><span
+                  class="text-slate-500">Set up a professional business email address.
+                </span><span class="text-slate-500 material-symbols-outlined">help</span>
+              </span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span class="flex items-center space-x-1">
+                <span class="text-green-500 material-symbols-outlined">check_small</span><span class="text-slate-500">
+                  Optimize your workflow with managed WordPress hosting.</span>
+              </span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span class="flex items-center space-x-1">
+                <span class="text-green-500 material-symbols-outlined">check_small</span><span class="text-slate-500">
+                  Launch websites quickly with our Website Builder.</span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-between space-y-4 sm:space-y-2 sm:space-x-8 sm:flex-row flex-col items-center">
+      <div class=" w-[90vw] sm:w-[30vw] bg-[#eff2fe] p-7 space-y-2 flex justify-between flex-col">
+        <img class="w-64" src="./assets/bitcatcha-dark-2x.png" alt="">
+        <p>Speed test results of our Hostinger US test site came back with a worldwide average of a blazing fast 143 ms,
+          which ranks them as one of our A+ top tier hosts!</p>
+      </div>
+      <div class=" w-[90vw] sm:w-[30vw] bg-[#eff2fe] p-7 space-y-2 flex justify-between flex-col">
+        <img class="w-64" src="./assets/wpbeginner-dark-2x.png" alt="">
+        <p>If you have a small business website, an online store, or a growing blog, your website can easily handle
+          sudden
+          traffic spikes.</p>
+      </div>
+      <div class=" w-[90vw] sm:w-[30vw] bg-[#eff2fe] p-7 space-y-2 flex justify-between flex-col">
+        <img class="w-64" src="./assets/website-planet-dark-2x.png" alt="">
+        <p>The average loading time of my fully-fledged landing page was a phenomenal 1.56s, and uptime over a few
+          months
+          of testing was upwards of 99.99%, exactly as promised.</p>
+      </div>
+    </div>
+  </section>
+  <section class=" container mx-auto mt-20 flex justify-between flex-col items-center">
+    <div class="flex justify-between sm:flex-row-reverse flex-col-reverse my-6 items-center">
+      <img class=" w-[90vw] sm:w-1/2 " src="./assets/customer-support-2x.png" alt="">
+      <div class=" w-[90vw] sm:w-1/2 flex justify-center items-start flex-col ml-0 sm:ml-10">
+        <div class="w-[90vw] sm:selection:w-[33vw]">
+          <h1 class="text-2xl w-full sm:w-[30vw] sm:text-4xl font-bold py-4 text-[#2f1c6a]">Our Team is Here to Help You 24/7</h1>
+          <ul class="flex flex-col space-y-5 my-4">
+            <li class="flex items-center justify-between">
+              <span class="flex items-center space-x-1">
+                <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                  class="text-slate-500">Get help directly from the editor, thanks to our 24/7 live chat support.</span>
+              </span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span class="flex items-center space-x-1">
+                <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                  class="text-slate-500">
+                  Troubleshoot by yourself with our video walkthroughs and guides.
+              </span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span class="flex items-center space-x-1">
+                <span class="text-green-5 text-green-500 material-symbols-outlined">check_small</span><span
+                  class="text-slate-500">Become a pro webmaster with our in-depth tutorials. </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-between items-center space-x-0 sm:space-x-8 sm:flex-row flex-col sm:space-y-0 space-y-3 ">
+      <div class="w-[90vw] h-[206px] sm:w-[30vw] bg-[#eff2fe] p-7 space-y-2 flex justify-between flex-col">
+        <img class="w-64" src="./assets/trustpilot-dark-2x.png" alt="">
+          <p>One of the best customer service you can find. Instant support. Patient, detailed and very hands-on support. I am a fan!</p>
+        <div class="flex justify-between">
+          <div>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+          </div>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+      <div class=" w-[90vw] h-[206px] sm:w-[30vw] bg-[#eff2fe] p-7 space-y-2 flex justify-between flex-col">
+        <img class="w-64" src="./assets/trustpilot-dark-2x.png" alt="">
+          <p>The best support in the industry. Amazing. Never fails to impress. Keep it up.</p>
+        <div class="flex justify-between">
+          <div>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+          </div>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+      <div class=" w-[90vw] h-[206px] sm:w-[30vw] bg-[#eff2fe] p-7 space-y-2 flex justify-between flex-col">
+        <img class="w-64" src="./assets/trustpilot-dark-2x.png" alt="">
+          <p>Support is fast and good. A company that still puts the customer first!</p>
+        <div class="flex justify-between">
+          <div>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+          </div>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container mx-auto py-20">
+    <div class="flex flex-col space-y-6 justify-center items-center">
+      <h1 class="text-4xl font-bold text-center mb-4">Join 2,002,312 Website Owners</h1>
+      <button class="p-4 px-20 bg-[#6c52b9] font-bold text-white rounded-md">Get Started</button>
+      <p><span class="text-green-500 material-symbols-outlined">check_small</span>30-Day Money-Back Guarantee <span></span></p>
+    </div>
+  </section>
+  <section id="securityFeature" class=" bg-[#673de6]  sm:h-[110vh]   ">
+    <div class="container mx-auto flex justify-between sm:flex-row flex-col-reverse my-6 items-center">
+      <img class=" w-[90vw] sm:w-1/2 " src="./assets/advanced-security-features-2x.png  " alt="">
+      <div class=" w-[90vw] sm:w-1/2 flex justify-center items-center flex-col ml-0 sm:ml-10">
+        <div class="w-[90vw] sm:w-[33vw]">
+          <h1 class="text-2xl w-full sm:w-[30vw] sm:text-4xl font-bold py-4 text-white">Advanced Security Features</h1>
+          <ul class="flex flex-col space-y-5 my-4">
+            <li class="flex items-center justify-between">
+              <span class="flex items-center space-x-1">
+                <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                  class="text-white">Get unlimited SSL security certificates to encrypt your websites’ traffic.</span>
+              </span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span class="flex items-center space-x-1">
+                <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                  class="text-white">
+                  Protect your website from DDoS attacks with Cloudflare protected nameservers.
+              </span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span class="flex items-center space-x-1">
+                <span class="text-green-5 text-green-500 material-symbols-outlined">check_small</span><span
+                  class="text-white">Secure your files with automatic backups. </span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span class="flex items-center space-x-1">
+                <span class="text-green-5 text-green-500 material-symbols-outlined">check_small</span><span
+                  class="text-white">Never miss a customer with our 99.9% uptime guarantee.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class=" container mx-auto flex mt-10 px-16 justify-between items-center space-x-0 sm:space-x-8 sm:flex-row flex-col sm:space-y-0 space-y-3 ">
+      <div class="w-[90vw] h-[200px] sm:w-[30vw] bg-[#5025d1] p-7 space-y-2 flex justify-around flex-col">
+        <img class="w-64" src="./assets/pcmag-light-2x.png" alt="">
+          <p class="text-white">Hostinger proved itself a reliable web hosting service. In fact, our test site didn't go down once during the 14-day observation period.</p>
+      </div>
+      <div class="w-[90vw] h-[200px] sm:w-[30vw] bg-[#5025d1] p-7 flex justify-around items-start flex-col">
+        <img class="w-64" src="./assets/cnet-light-2x.png" alt="">
+          <p class="text-white">Plans include SSL certificates and all servers have an advanced security module to protect your data.</p>
+      </div>
+      <div class="w-[90vw] h-[200px] sm:w-[30vw] bg-[#5025d1] p-7 space-y-2 flex justify-around flex-col">
+        <img class="w-64" src="./assets/sfgate-light-2x.png" alt="">
+          <p class="text-white">With DDoS protection, auto-updates, automatic website backups, and other security measures, you can rest assured that your website is secured.</p>
+      </div>
+    </div>
+
+  </section>
+  <section class=" container mx-auto mt-20 flex justify-between flex-col items-center">
+    <div class="flex justify-between sm:flex-row-reverse flex-col-reverse my-6 items-center">
+      <img class=" w-[90vw] sm:w-1/2 " src="./assets/free-migration-2x.png" alt="">
+      <div class=" w-[90vw] sm:w-1/2 flex justify-center items-start flex-col ml-0 sm:ml-10">
+        <div class="w-[90vw] sm:selection:w-[33vw]">
+          <h1 class="text-2xl w-full sm:w-[30vw] sm:text-4xl font-bold py-4 text-[#2f1c6a]">Free Migration</h1>
+          <ul class="flex flex-col space-y-5 my-4">
+            <li class="flex items-center justify-between">
+              <span class="flex items-center space-x-1">
+                <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                  class="text-slate-500">Transfer your website using our free automatic website migration tool.</span>
+              </span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span class="flex items-center space-x-1">
+                <span class="text-green-500 material-symbols-outlined">check_small</span><span
+                  class="text-slate-500">
+                  Our agents will guide you in every step of the way.
+              </span>
+            </li>
+            <li class="flex items-center justify-between">
+              <span class="flex items-center space-x-1">
+                <span class="text-green-5 text-green-500 material-symbols-outlined">check_small</span><span
+                  class="text-slate-500">Your website will be transferred within 24 hours.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-between items-center space-x-0 sm:space-x-8 sm:flex-row flex-col sm:space-y-0 space-y-3 ">
+      <div class="w-[90vw] h-[206px] sm:w-[30vw] bg-[#eff2fe] p-7 space-y-2 flex justify-between flex-col">
+        <img class="w-64" src="./assets/trustpilot-dark-2x.png" alt="">
+          <p>I have migrated to Hostinger few months ago. I am extremely satisfied with the hosting, and with their support.</p>
+        <div class="flex justify-between">
+          <div>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+          </div>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+      <div class=" w-[90vw] h-[212px] sm:w-[30vw] bg-[#eff2fe] p-7 space-y-2 flex justify-between flex-col">
+        <img class="w-64" src="./assets/trustpilot-dark-2x.png" alt="">
+          <p>Migrated over a website and email from another provider. Hostinger's UI is easy to use and the support was quick, friendly, and very helpful.</p>
+        <div class="flex justify-between">
+          <div>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+          </div>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+      <div class=" w-[90vw] h-[212px] sm:w-[30vw] bg-[#eff2fe] p-7 space-y-2 flex justify-between flex-col">
+        <img class="w-64" src="./assets/trustpilot-dark-2x.png" alt="">
+          <p>Very positive experience as a new customer. I migrated my website hosting and the support was amazing and very responsive.</p>
+        <div class="flex justify-between">
+          <div>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+            <i class="text-[#00b090] text-2xl fa-solid fa-star"></i>
+          </div>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container mx-auto mt-16">
+    <div class="text-center"> 
+      <h1 class=" text-xl sm:text-4xl text-[#2f1c6a] font-bold mb-10">Featured Client Stories</h1>
+    </div>
+    <div class="flex justify-between px-16 items-center space-x-0 sm:space-x-8 sm:flex-row flex-col sm:space-y-0 space-y-3 ">
+      <div class="w-[90vw] sm:w-[28vw] border-2  flex space-y-6 flex-col">
+        <div class="flex justify-between pt-10 px-10">
+          <div>
+            <i class="text-[#5025d1] text-xl fa-solid fa-star"></i>
+            <i class="text-[#5025d1] text-xl fa-solid fa-star"></i>
+            <i class="text-[#5025d1] text-xl fa-solid fa-star"></i>
+            <i class="text-[#5025d1] text-xl fa-solid fa-star"></i>
+            <i class="text-[#5025d1] text-xl fa-solid fa-star"></i>
+          </div>
+        </div>
+        <p class="text-sm px-10">Ever since we've been with Hostinger, it's been amazing. We've not really had any issues at all and if we ever do have a question, their customer service is incredible.</p>
+        <h1 class="font-bold text-md text-[#5025d1] px-10">Read full story</h1>
+        <div class="flex items-center border-t-2 px-10 py-4 space-x-3 bg-[#f4f5ff] ">
+          <img class="w-16 h-16" src="./assets/charlie-2x.png" alt="">
+          <div>
+            <h1 class="text-[#5025d1] font-bold">Charlie Low </h1>
+            <span class="text-sm text-[#5025d1]">Co-founder of Climbingvan</span>
+          </div>
+        </div>
+      </div>
+      <div class="w-[90vw] sm:w-[28vw] border-2  flex space-y-6 flex-col">
+        <div class="flex justify-between pt-10 px-10">
+          <div>
+            <i class="text-[#5025d1] text-xl fa-solid fa-star"></i>
+            <i class="text-[#5025d1] text-xl fa-solid fa-star"></i>
+            <i class="text-[#5025d1] text-xl fa-solid fa-star"></i>
+            <i class="text-[#5025d1] text-xl fa-solid fa-star"></i>
+            <i class="text-[#5025d1] text-xl fa-solid fa-star"></i>
+          </div>
+        </div>
+        <p class="text-sm px-10">When I looked at Hostinger’s hPanel, I realized it was going to be the easiest to manage. Many developers may prefer other options, but for me personally, I like hPanel.</p>
+        <h1 class="font-bold text-md text-[#5025d1] px-10">Read full story</h1>
+        <div class="flex items-center border-t-2 px-10 py-4 space-x-3 bg-[#f4f5ff] ">
+          <img class="w-16 h-16" src="./assets/david-2x.png" alt="">
+          <div>
+            <h1 class="text-[#5025d1] font-bold">David Shaw</h1>
+            <span class="text-sm text-[#5025d1]">Senior Web Designer</span>
+          </div>
+        </div>
+      </div>
+      <div class="w-[90vw] sm:w-[28vw] border-2  flex space-y-6 flex-col">
+        <div class="flex justify-between pt-10 px-10">
+          <div>
+            <i class="text-[#5025d1] text-xl fa-solid fa-star"></i>
+            <i class="text-[#5025d1] text-xl fa-solid fa-star"></i>
+            <i class="text-[#5025d1] text-xl fa-solid fa-star"></i>
+            <i class="text-[#5025d1] text-xl fa-solid fa-star"></i>
+            <i class="text-[#5025d1] text-xl fa-solid fa-star"></i>
+          </div>
+        </div>
+        <p class="text-sm px-10">With Hostinger I can manage the hosting, domain name, and SSL certificate in one place, which is really refreshing. And setting up a website was easy - I didn't need to talk to customer support once!</p>
+        <h1 class="font-bold text-md text-[#5025d1] px-10">Read full story</h1>
+        <div class="flex items-center border-t-2 px-10 py-4 space-x-3 bg-[#f4f5ff] ">
+          <img class="w-16 h-16" src="./assets/owen-2x.png" alt="">
+          <div>
+            <h1 class="text-[#5025d1] font-bold">Owen Phillips</h1>
+            <span class="text-sm text-[#5025d1]">Founder of Gate Foot Forge</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-10">
+      <button class="px-10 sm:px-16 py-3 border-2 border-[#5025d1] text-[#5025d1] hover:bg-[#ecedfb] transition-all font-bold">Browse more client stories</button>
+    </div>
+  </section>
+  <section class="container mx-auto py-20">
+    <div class="flex flex-col space-y-6 justify-center items-center">
+      <h1 class="text-4xl font-bold text-center mb-4">Join 2,002,312 Website Owners</h1>
+      <button class="p-4 px-20 bg-[#6c52b9] font-bold text-white rounded-md">Get Started</button>
+      <p><span class="text-green-500 material-symbols-outlined">check_small</span>30-Day Money-Back Guarantee <span></span></p>
+    </div>
+  </section>
+  <footer class="pt-10 bg-[#ecedfb] my-4 px-5 sm:px-10">
+      <div class="container mx-auto sm:px-20  border-b-2 border-gray-300">
+        <div class="flex justify-between sm:flex-row flex-col bg-[#ecedfb]">
+          <div class=" sm:w-[27vw]">
+            <img class="" src="./assets/hostinger-logo copy.svg" alt="">
+            <p class="text-sm text-[#2f1c6a] leading-6">We are a web hosting provider on a mission to bring success to everyone online.</p>
+             <p class="text-sm text-[#2f1c6a] leading-6">we constantly improve our server technology, provide professional support, and simplify site creation with our AI Website Builder</p>
+            <div class="flex mt-5">
+              <img src="./assets/visa.svg" alt="">
+              <img src="./assets/mastercard.svg" alt="">
+              <img src="./assets/discover.svg" alt="">
+              <img src="./assets/dinersclub.svg" alt="">
+              <img src="./assets/rupay.svg" alt="">
+            </div>
+            <a href="#" class="font-bold text-[#2f1c6a] mt-1">Add More</a>
+          </div>
+          <div class="mt-4 pl-4 w-full sm:w-[70vw] flex sm:flex-row flex-col justify-between">
+              <div class="sm:w-[12vw]">
+                <div class="displayUL flex justify-between items-center ">
+                  <h1 class="font-bold text-2xl my-2 text-[#2f1c6a]">Hosting</h1>
+                  <i class="sm:text-[#ecedfb] text-[#2f1c6a] fa-solid fa-chevron-down block sm:hidden"></i>
+                </div>
+                <ul class="ul__ hidden sm:flex flex-col space-y-2">
+                  <li>Web hosting</li>
+                  <li>professional web hosting</li>
+                  <li>VPS hosting</li>
+                  <li>Minicraft server hosting</li>
+                  <li>CyberPlanel hosting</li>
+                  <li>Cloud hosting</li> 
+                  <li>WordPress hosting</li>
+                  <li>Business Email</li>
+                  <li>Google Workspace</li>
+                  <li>CMS hosting</li>
+                  <li>Ecommerce hosting</li>
+                  <li>Free Web hosting</li>
+                </ul>
+              </div>
+              <div class="sm:w-[12vw]  flex flex-col">
+                <div class="displayUL flex justify-between items-center ">
+                  <h1 class="font-bold text-2xl my-2 text-[#2f1c6a]">Domain</h1>
+                  <i class="sm:text-[#ecedfb] text-[#2f1c6a] fa-solid fa-chevron-down"></i>
+                </div>
+                <ul  class="ul__ hidden sm:flex flex-col space-y-2">
+                  <li>Domain</li>
+                  <li>Domain Transfer</li>
+                  <li>Free Domain name</li>
+                  <li>Cheap domains</li>
+                  <li>Domain Extensions</li>
+                  <li>WHOIS lookup</li>
+                  <li>Free SSL Certificate</li>
+                  <li>.in Domain</li>
+                  <li>.com Domain</li>
+                  <li>.io Domain</li>
+                  <li>.net Domain</li>
+                  <li>.ai Domains</li>
+                  <li>.tech Domain</li>
+                </ul>
+    
+                <div class="displayUL flex justify-between items-center ">
+                  <h1 class="font-bold text-2xl my-2 text-[#2f1c6a]">Tools</h1>
+                  <i class="sm:text-[#ecedfb] text-[#2f1c6a] fa-solid fa-chevron-down"></i>
+                </div>
+                <ul class="ul__ hidden sm:flex flex-col space-y-2">
+                  <li>Online store</li>
+                  <li>landing page builder</li>
+                  <li>website builder</li>
+                  <li>AI Website builder</li>
+                  <li>AI Logo Generator</li>
+                  <li>website builder</li>
+                  <li>Business Name Generator</li>
+                  <li>eCommerce Website</li>
+                </ul>
+              </div>
+              <div class="w-full sm:w-[12vw]">
+                <div class="displayUL flex justify-between items-center">
+                  <h1 class="font-bold text-2xl my-2 text-[#2f1c6a]">Information</h1>
+                  <i class="sm:text-[#ecedfb] text-[#2f1c6a] fa-solid fa-chevron-down sm:hidden"></i>
+                </div>
+                <ul class="ul__ hidden sm:flex flex-col space-y-2">
+                  <li>Migrate to hosting</li>
+                  <li>System status</li>
+                  <li>Affiliate program</li>
+                  <li>Payment method</li>
+                  <li>Rewards</li>
+                  <li>Hostiger Reviews</li>
+                  <li>Pricing</li>
+                  <li>Sitemap</li>
+                </ul>
+    
+                <div class="displayUL flex justify-between items-center ">
+                  <h1 class="font-bold text-2xl my-2 text-[#2f1c6a]">Legal</h1>
+                  <i class="sm:text-[#ecedfb] text-[#2f1c6a] fa-solid fa-chevron-down"></i>
+                </div>
+                <ul class="ul__ hidden sm:flex flex-col space-y-2">
+                  <li>Privacy policy</li>
+                  <li>terms of services</li>
+                </ul>
+    
+                <div class="displayUL flex justify-between items-center ">
+                  <h1 class="font-bold text-2xl my-2 text-[#2f1c6a]">Company</h1>
+                  <i class="sm:text-[#ecedfb] text-[#2f1c6a] fa-solid fa-chevron-down"></i>
+                </div>
+                <ul class=" ul__ hidden sm:flex flex-col space-y-2">
+                  <li>About hostinger</li>
+                  <li>Our technology</li>
+                  <li>Roadmap</li>
+                  <li>contact us</li>
+                  <li>Blog</li>
+                </ul>
+    
+                <div class="displayUL flex justify-between items-center ">
+                  <h1 class="font-bold text-2xl my-2 text-[#2f1c6a]">Help</h1>
+                  <i class="sm:text-[#ecedfb] text-[#2f1c6a] fa-solid fa-chevron-down"></i>
+                </div>
+                <ul class="ul__ hidden sm:flex flex-col space-y-2">
+                  <li>Tutorial</li>
+                  <li>Knowledge bases</li>
+                  <li>Report online abuse</li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      <div class="flex justify-end my-3">
+        <div>
+          <i class=" text-[#2f1c6a] fa-brands fa-linkedin"></i>
+          <i class=" text-[#2f1c6a] fa-brands fa-square-facebook"></i>
+          <i class=" text-[#2f1c6a] fa-brands fa-square-instagram"></i>
+          <i class=" text-[#2f1c6a] fa-brands fa-square-x-twitter"></i>
+          <i class=" text-[#2f1c6a] fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      </div>
+      <div class=" flex sm:flex-row flex-col space-y-2 sm:space-y-0 justify-between my-4">
+        <p class="text-xs text-[#5025d1]">© 2004-2024 hostinger.in - Premium Web Hosting, Cloud, VPS, AI Website Builder & Domain Registration Services.</p>
+        <p class="text-xs text-[#5025d1]">Prices are listed without GST</p>
+      </div>
+  </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

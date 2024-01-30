@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.shadow-div{
+    box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.576)
+  }
+  .hosting_list{
+    display: block;
+  }
+  
+  .plan-shadow-div{
+    transition: all 0.4s linear;
+  }
+.plan-shadow-div:hover{
+    box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.576);
+    transform: scale(1.015);
+}
